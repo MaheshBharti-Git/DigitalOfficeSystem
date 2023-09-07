@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./components/star.css"
+import LogIn_Page from './components/LogIn_Page';
+import Tableform1 from './components/Tableform1';
+import {Route, Routes} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+         <Routes>
+              <Route path = '/' element = <LogIn_Page/> />
+              <Route path = 'form' element = <Tableform1/> /> 
+         </Routes>
+    
+    </>
+  
   );
 }
-
 export default App;

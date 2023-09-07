@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+
+.card-body {
+    width: 30rem;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    margin-top: 10%;
+}
+
+.card-container {
+    padding-bottom: 2rem;
+    display: flex;
+    gap: 100px;
+    background: url('./Indian_Space_Research_Organisation-Logo.wine.svg');
+    background-position-y: -40%;
+    background-position-x: calc(50%);
+    background-position: center;
+    background-size: 52%;
+    background-repeat: no-repeat;
+
+}
+
+.text-center {
+    height: 100vh;
+}
+
+@media screen and (max-width:995px) {
+    .card-container {
+        background-position-y: 40%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .card-container {
+        flex-direction: column;
+        background-image: none;
+    }
+
+    .card-body {
+        width: 100%;
+        padding: 20px;
+    }
+}
